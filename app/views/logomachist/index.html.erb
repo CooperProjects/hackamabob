@@ -1,0 +1,35 @@
+<div style="background:#006eb2 !important" class="jumbotron" >
+      <div class="container">
+        <h1>Logomachist</h1>
+        <p>Welcome to the Logomachist. still working on this thing.</p>
+        <p> </p>
+        <p>I know that I could probably do this easier using Nokogiri, but that's not really the point of this</p>
+        <p>My hope is that I can recreate this app as a Ruby Gem so that other students can code apps for </p>
+        <p>linguistics projects. After I finish the basic version of the </p>
+      </div>
+</div>
+
+<div class="container" margin-left=40px>
+    <div class = "page-header">
+        <h1><span  class="glyphicon glyphicon-pencil"></span>  Words Roster</h1>
+    </div>
+</div>
+    
+
+    
+            <ul>
+                
+               <% @glossaries.each do |glossary| %> 
+                
+            <li> <%= glossary.name %> : <%= glossary.sub_relevant %></li>
+            <p> </p>
+                
+                
+                
+                  
+                <% end %>
+            </ul>
+
+        
+        
+  

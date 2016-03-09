@@ -1,0 +1,51 @@
+<div class="jumbotron">
+      <div class="container">
+        <h1>WGlossary Mode</h1>
+        <p>This form is used to enter websites into the database. Please be sure that the sites you enter have the html tag used for your parser.</p>
+       
+      </div>
+    </div>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @glossary.name %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @glossary.link %>
+</p>
+
+<p>
+  <strong>Hitone:</strong>
+  <%= @glossary.hitone %>
+</p>
+
+<p>
+  <strong>Hittwo:</strong>
+  <%= @glossary.hittwo %>
+</p>
+
+<p>
+  <strong>Hitthree:</strong>
+  <%= @glossary.hitthree %>
+</p>
+
+<p>
+  <strong>X:</strong>
+  <%= @glossary.x %>
+</p>
+
+<p>
+  <strong>Y:</strong>
+  <%= @glossary.y %>
+</p>
+
+<p>
+  <strong>Z:</strong>
+  <%= @glossary.z %>
+</p>
+
+<%= link_to 'Edit', edit_glossary_path(@glossary) %> |
+<%= link_to 'Back', glossaries_path %>

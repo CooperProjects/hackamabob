@@ -1,0 +1,47 @@
+<div class="jumbotron">
+      <div class="container">
+        <h1>Logomachist</h1>
+        <p>Welcome to the Logomachist. still working on this thing.</p>
+       
+      </div>
+    </div>
+<div class="container" margin-left=40px>
+    <div class = "page-header">
+        <h1><span  class="glyphicon glyphicon-dashboard"></span>Words Roster</h1>
+    </div>
+
+    
+    
+    
+    <div class="row">
+        <div class="col-sm-4">
+    
+            <ul>
+                
+                <% @glossaries.each do |glossary| %>
+                
+                <li>
+                
+                
+                
+                    <div class="panel panel-default" >
+                        
+                        <div class="panel-heading">
+                            <h3 class="panel-title"> <%= glossary.name %> </h3>
+                        </div>
+                        
+                        <div class="panel-body">
+                                <%= link_to strip_tags(glossary.headline), "http://#{glossary.link}",
+                                target: "_blank" %>
+                            
+                        </div>
+                        
+                    </div>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        
+        </div>
+    </div>
+</div>

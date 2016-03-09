@@ -1,0 +1,53 @@
+<link href="websites.css" type="text/css">
+
+
+
+<div id="webJumboTron"  class="jumbotron">
+  
+      <div id="webJumboTron" class="container">
+        <h1  >Website h2 Parser</h1>
+        
+        <p >This form is used to enter websites into the database. The app will return the "h2" heading.<br>
+                                     put the url of the site or page you want this ap  to register in the database, and this app will <br>
+                                     search it for the first H2 tag.
+        
+        </p>
+       <p>&nbsp;</p>
+      </div>
+      
+    </div>
+
+
+<style type="text/css">
+   body { background: 	#fff !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+
+
+
+ <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-8">.</div>
+  <div class="col-xs-6 col-md-4">.</div>
+</div>
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row">
+  <div class="col-xs-6 col-md-4">.</div>
+  <div class="col-xs-6 col-md-2">.
+  <h1>New Website</h1>
+  <ul>
+<%= render 'form' %>
+
+
+</ul>
+  <h3><%= link_to 'Back', :websites %></h3>
+  </div>
+  <div class="col-xs-6 col-md-4">.</div>
+</div>
+
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+  <div class="col-xs-6">.</div>
+  <div class="col-xs-6"></div>
+</div>

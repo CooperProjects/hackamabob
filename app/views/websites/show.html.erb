@@ -1,0 +1,21 @@
+<div class="jumbotron">
+      <div class="container">
+        <h1>Detail of Registered Websites</h1>
+        <p>Below are the websites being parsed</p>
+       
+      </div>
+    </div>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @website.name %>
+</p>
+
+<p>
+  <strong>Identifier:</strong>
+  <%= @website.identifier %>
+</p>
+
+<%= link_to 'Edit', edit_website_path(@website) %> |
+<%= link_to 'Back', websites_path %>

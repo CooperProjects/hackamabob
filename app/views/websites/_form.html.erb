@@ -1,0 +1,47 @@
+
+
+
+<%= form_for(@website) do |f| %>
+  <% if @website.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@website.errors.count, "error") %> prohibited this website from being saved:</h2>
+
+      <ul>
+      <% @website.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+
+  
+  
+   <div class="panel panel-primary">
+  <div id="parser_form" class="panel-heading">
+    <h3 class="panel-title">Enter Data Here</h3>
+  </div>
+  <div class="panel-body">
+    
+    
+    
+                <div class="field">
+                  <%= f.label :name %><br>
+                  <%= f.text_field :name %>
+                </div>
+                <div class="field">
+                  
+                  <%= f.label :identifier %><br>
+                  <%= f.text_field :identifier %>
+                </div>
+            <div class="actions">
+              <%= f.submit %>
+        </div>
+    
+    
+  </div>
+</div>
+  
+  
+  
+<% end %>
