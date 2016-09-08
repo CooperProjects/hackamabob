@@ -21,7 +21,22 @@ class Glossary < ActiveRecord::Base
         # One thing it is important to keep in mind is that this method is in a 
         #  Each time this method 
         # is called it is only deal with a single term
-      
+        # Line 1: 
+        # Line 2: 
+        # Line 3: 
+        # Line 4: 
+        # Line 6: 
+        # Line 7: 
+        # Line 89: copy sub_block [1e2x234] to relevant [34x789] fro comparison in size at "line 5" 
+        # Line 9: 
+        # Line 10: 
+        # Line 11: 
+        # Line 12: 
+        # Line 13: 
+        # Line 14: 
+        # Line 15: 
+        # Line 16: 
+        
         term = Array.new
         
         x    = 0
