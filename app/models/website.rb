@@ -89,6 +89,7 @@ class Website < ActiveRecord::Base
             file = open("http://#{name}")
             content = file.read
             unless content.index("<h2").nil?
+            
             #start_location = content.index(identifier)
             header_start = content.index("<h2") # + 4
             header_end = content.index("</h2>") # - 1
@@ -121,4 +122,3 @@ class Website < ActiveRecord::Base
     
     
     
-end
