@@ -4,6 +4,8 @@ class Glossary < ActiveRecord::Base
 
 
 
+
+
     def gather_relevant_arr(term_block)
         # This method retrieves the terms and attributes in the relevancy list of 
         # a word that has been searched. The term_block only has the section that contains
