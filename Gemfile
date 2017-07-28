@@ -55,3 +55,8 @@ group :development do
   gem 'spring'
 end
 
+
+
+# Adding in XML Readers for the landing object
+gem 'nokogiri'
+gem 'feedjira'

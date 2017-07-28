@@ -2,12 +2,13 @@ Rails.application.routes.draw do
   
 
   
+  resources :landings
   resources :glossaries
   resources :logomachist
   resources :websites
   get 'hmbob/display' #=> 'hmbob#display'
   get 'logomachist/index'
-  root 'open_boot#home' 
+  root 'landings#home' 
   get "about" => "open_boot#about", as: :about
   get "contacts" => "open_boot#contacts", as: :contacts
   #get "websites" => "websites#new"

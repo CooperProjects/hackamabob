@@ -8,11 +8,6 @@ class Website < ActiveRecord::Base
       return h2_scan
     
     end
-    
-   
-    
-
-
 
 
     def id_check
