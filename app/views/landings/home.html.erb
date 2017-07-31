@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <div class="container">
   <h1></h1>
+  <br><br>
   <div class="row">
                 <div class="col-sm-6" style="background-color:#D6EAF8; min-height: 1000px;" >
-                          <p>Lorem ipsum...</p>
+                <br>
                            <img src="assets/atgoogle.jpg" alt="Mountain View" style="height:250;width:555px;">
                            <!----------------------------------------------------------------------------------------------------------------->           
                             <div class="tab">
@@ -33,38 +34,45 @@
       
       
       <br><br>
-      <p>Hello,<br> I know this dosen't look like much but I'm going to be adding 
+      <p align="justify" color="#000000">
+      <font face="Time New Roman" size="+1" >
+      </p>
+      <p>
+        Hello,<br> I know this dosen't look like much but I'm going to be adding 
       apps and tutorial. Just a few things to make it more exciting. Right now, 
       as of <font color="red"><%= (DateTime.now() - 1).strftime("%a %B %d, %Y") %></font> I don't have much time to work on this site. So it's a
-      process.</p>
+      process.
+      </p>
+      </font>
       
-      
-                    <div id="News" class="tabcontent">
-                      <h3>News</h3>
+                    <div  id="News" class="tabcontent" style="border:0px" >
+                      <h3 >News</h3>
                       <%= render 'news' %>
                     </div>
                     
-                    <div id="Projects" style="border:0px"class="tabcontent">
+                    <p><div id="Projects" style="border:0px" class="tabcontent">
                       <h3>Projects</h3>
+                      <hr style="height:1px;border:none;color:#333;background-color:#333;">
                       <%= render 'projects' %>
+                    </p>
                     </div>
                     
-                    <div id="Videos" class="tabcontent">
+                    <div id="Videos" style="border:0px" class="tabcontent">
                       <h3>Videos</h3>
                       <%=  render 'videos' %>
                     </div>
                     
-                    <div id="Design" class="tabcontent">
+                    <div id="Design" style="border:0px" class="tabcontent">
                       <h3>Design Thinking & Project Managment</h3>
                       <%= render 'design' %>
                     </div>
                     
-                    <div id="Ruby" class="tabcontent">
+                    <div id="Ruby" style="border:0px" class="tabcontent">
                       <h3>Ruby</h3>
                       <%= render 'ruby' %>
                     </div>
                     
-                    <div id="Python" class="tabcontent">
+                    <div id="Python" style="border:0px" class="tabcontent">
                       <h3>Python</h3>
                       <%= render 'python' %>
                     </div>
