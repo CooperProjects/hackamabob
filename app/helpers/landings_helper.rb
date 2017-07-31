@@ -44,7 +44,7 @@ module LandingsHelper
         # => if meet the "subject matter relevency" criteria. 
            
     
-    def primary_rss_url_list
+    def secondary_rss_url_list
         list = Array.new
             list.push "https://news.ycombinator.com/rss" #0
             list.push "https://info.crunchbase.com/feed/" #0
@@ -53,40 +53,26 @@ module LandingsHelper
         return list
     end
     
-    
-###############################################################################
-###############################################################################
-
         def rssFeed
         array_BastageFeed_landings_index = Array.new
         hash_BastageFeed_landings_index  = Hash.new
         i=0
-        stage   = Feedjira::Feed.fetch_and_parse "http://feeds.feedburner.com/BackStageCasting?format=xml"
-
-                    
+        stage   = Feedjira::Feed.fetch_and_parse "https://www.technologyreview.com/c/computing/rss/"
             stage.entries.each do |stages|
-            
-      
                 hash_BastageFeed_landings_index [i] = 
                 {
-                    
                     title:          stages.title,
                     url:            stages.url,
                     summary:        stages.summary,
                     date:           stages.published,
                     entry_id:       stages.id,
                     description:    stages.content,
-                  
                }
                 array_BastageFeed_landings_index << hash_BastageFeed_landings_index
                 i += 1 
-        
-               
             end
+        return hash_BastageFeed_landings_index
         end
-###############################################################################
-###############################################################################
-
 end
 
 

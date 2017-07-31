@@ -1,0 +1,24 @@
+<p>Check the latest tech and entreprnuership news</p>
+
+<% i = 0 %>
+<div class="row">
+  <% rssFeed.entries[0,5].each do |key , value| %>
+      <div class="col">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" style="background-color:#<%= rand(00077215...16777215).to_s(16) %>">
+            <h5><font color='ffffff'><b><%= value[:summary][0,48]%>...</b></font></h5>
+            <div class="caption">
+              <h6><b><%= value[:title] %></b></h6>
+              <p><a href="#" class="btn-sm btn-primary" role="button">Go See</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
+
+
+
+<% rssFeed.entries[0,5].each do |key , value| %>
+<h4><%= value %></h4>
+<% end %>
