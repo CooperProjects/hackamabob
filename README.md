@@ -7,7 +7,13 @@
     ----------------------------------------------------------------- 
 
 
-Welcome to your Rails project on Cloud9 IDE!
+Welcome to Hacka-ma-Bob 
+
+Code -
+Rails 
+Python
+ 
+Started on Cloud9 IDE!
 
 To get started, just do the following:
 
