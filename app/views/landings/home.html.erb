@@ -10,13 +10,69 @@
                             <div class="tab">
                               <button class="tablinks" onclick="openCity(event, 'News')">News</button>
                               <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-                              <button class="tablinks" onclick="openCity(event, 'Videos')">Videos</button>
+                              <button class="tablinks" onclick="openCity(event, 'Reads')">Reads</button>
                               <button class="tablinks" onclick="openCity(event, 'Design')">DeTh.PM.</button>
                               <button class="tablinks" onclick="openCity(event, 'Ruby')">Ruby</button>
                               <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
                             </div>
       <br>
-      Academic Work
+      <font style="line-height:1" size="3" face="Times New Roman">
+      <p l>
+      <strong>Current:</strong><br>
+      Mentor at Vehicle<br>
+      Center for Entreprenuership and Economic Development<br>
+      Bethune-Cookman Univeristy<br><br>
+       
+      
+      <strong>Education:</strong><br>
+      Bethune-Cookman University, Daytona, Florida<br> 
+      Bachelors of Science Degree Business Administration w/ concentration  in Management<br>
+      Graduation date: May 2017<br><br>
+      
+      Marine Corps Communication Electronics School<br>
+      Tropospheric Multi-Channel Equpiment Operator's Course<br><br>
+      
+      College of Marin<br>
+      Film Prodution<br>
+      Film & Television Writing<br><br>
+      
+      <strong>Other:</strong><br><br>
+      
+      Startup Colorado<br>
+      Business Pitch<br>
+      Startup Managemment & Marketing<br><br>
+      
+      University Innovation Fellows<br>
+      Design Thinking<br>
+      Project Leadership<br><br>
+      
+      LaSalle Computer Learning Center<br>
+      Project Management Professional Course<br><br>
+      
+      Center for Entreprenueship and Economic Development<br>
+      Lean Six Sigma White Belt, Yellow Belt<br><br>
+      
+      
+      <strong>Community Involvement</strong><br>
+      
+      Makers For Change<br>
+      H.B.C.U. I.C.E<br><br>
+      
+      Debating For Democracy<br> 
+      Project Pericles<br><br>
+      
+      College of Business Youth Summer Camp<br><br>
+      
+      Marine Wing Communications Squadron<br>
+      Community Involvement Chairperson SMP<br><br>
+      </p>
+      </font>
+      
+      
+      
+      
+
+      <hr>
       <hr>
       <a href="https://www.youtube.com/watch?time_continue=9&v=9z9AwgWa54c"  class="list-group-item list-group-item-success">Honda All-Star Challenge</a>
       <a href="http://www.projectpericles.org/projectpericles/programs/section/debating_for_democracy_d4d_/"  class="list-group-item list-group-item-info">Project Pericles Debating for Democracy</a>
@@ -30,15 +86,15 @@
 </div>
 
 
-<div class="col-sm-6" style="background-color:#FAE5D3; min-height: 1000px;">
+<div class="col-sm-6" style="background-color:#FAE5D3; min-height: 1000px; align=:justify;">
       
       
       <br><br>
       <p align="justify" color="#000000">
-      <font face="Time New Roman" size="+1" >
+      <font face="Time New Roman" size="+1" style="line-height:1.1" align="justify">
       </p>
       <p>
-        Hello,<br> I know this dosen't look like much but I'm going to be adding 
+      Hello,<br> I know this dosen't look like much but I'm going to be adding 
       apps and tutorial. Just a few things to make it more exciting. Right now, 
       as of <font color="red"><%= (DateTime.now() - 1).strftime("%a %B %d, %Y") %></font> I don't have much time to work on this site. So it's a
       process.
@@ -57,9 +113,11 @@
                     </p>
                     </div>
                     
-                    <div id="Videos" style="border:0px" class="tabcontent">
-                      <h3>Videos</h3>
+                    <p><div id="Reads" style="border:0px; align:justify" class="tabcontent">
+                    <h3>Community Involvement</h3>
+                    <hr style="height:1px;border:none;color:#333;background-color:#333;"> 
                       <%=  render 'videos' %>
+                    </p>
                     </div>
                     
                     <div id="Design" style="border:0px" class="tabcontent">
@@ -119,7 +177,8 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    /* display: none; */
+    text-align:justify;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
@@ -174,6 +233,7 @@ body{padding-top:20px;}
 .carousel-indicators .active {
 background: #428bca;
 }
+
 </style>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
