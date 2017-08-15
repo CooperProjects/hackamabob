@@ -57,7 +57,7 @@ module LandingsHelper
         array_BastageFeed_landings_index = Array.new
         hash_BastageFeed_landings_index  = Hash.new
         i=0
-        stage   = Feedjira::Feed.fetch_and_parse "https://www.technologyreview.com/c/computing/rss/"
+        stage   = Feedjira::Feed.fetch_and_parse "http://feeds.feedburner.com/TechCrunch/startups"
             stage.entries.each do |stages|
                 hash_BastageFeed_landings_index [i] = 
                 {

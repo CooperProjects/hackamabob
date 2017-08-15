@@ -10,10 +10,10 @@
                             <div class="tab">
                               <button class="tablinks" onclick="openCity(event, 'News')">News</button>
                               <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-                              <button class="tablinks" onclick="openCity(event, 'Reads')">Reads</button>
-                              <button class="tablinks" onclick="openCity(event, 'Design')">DeTh.PM.</button>
-                              <button class="tablinks" onclick="openCity(event, 'Ruby')">Ruby</button>
-                              <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
+                              <button class="tablinks" onclick="openCity(event, 'Reads')">Community</button>
+                              <button class="tablinks" onclick="openCity(event, 'Design')">Reads</button>
+                              <button class="tablinks" onclick="openCity(event, 'Ruby')">Tutorial</button>
+                              <button class="tablinks" onclick="openCity(event, 'Python')">Contact</button>
                             </div>
       <br>
       <font style="line-height:1" size="3" face="Times New Roman">
@@ -121,7 +121,7 @@
                     </div>
                     
                     <div id="Design" style="border:0px" class="tabcontent">
-                      <h3>Design Thinking & Project Managment</h3>
+                      <h3>Good Reads & Tutorials</h3>
                       <%= render 'design' %>
                     </div>
                     
@@ -177,7 +177,7 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
-    /* display: none; */
+    display: none; 
     text-align:justify;
     padding: 6px 12px;
     border: 1px solid #ccc;
